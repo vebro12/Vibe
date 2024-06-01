@@ -1,0 +1,70 @@
+
+  .infoForm1 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .infoForm1>div{
+  
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    width: 90%;
+  }
+  
+  
+  .infoInput2 {
+    color: white;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: var(--inputColor); /* Ensure this variable is defined or replace it with a hex color */
+    border-radius: 8px;
+    padding: 20px;
+    flex:1;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+
+  }
+  .infoInput2::placeholder{
+    color: white;
+    opacity: 0.5; /* Firefox lowers the opacity by default, so we reset it to ensure consistency */
+  }
+  
+  /* For Internet Explorer 10-11 */
+  ::-ms-input-placeholder {
+    color: white;
+  }
+  
+  /* Microsoft Edge */
+  ::placeholder {
+    color: white;
+  }
+  
+  input[type="text"] {
+    outline: none;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+  
+  .infoInput2:focus {
+    outline: 2px solid #555;
+
+  }
+  /* Adjust the following class names based on your actual HTML structure */
+  .profileImagePreview, .coverImagePreview {
+    display: block; /* Make images block to stack them */
+    margin: 10px 0; /* Add some space around images */
+  }
+  

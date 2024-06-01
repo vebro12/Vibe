@@ -1,0 +1,90 @@
+/* AddTrendForm.css */
+.tbut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border:none;
+  padding: 13px 13px;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  font-size: 15px;
+  transition:all 100ms ease-out;
+}
+
+.tbut:hover {
+  cursor: pointer;
+  color: #8364e8;
+  background: transparent;
+  border: 2px solid #8364e8;
+}
+
+.tbut1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border:none;
+  padding: 11px 11px;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  font-size: 15px;
+  transition:all 100ms ease-out;
+}
+.tbut1:hover {
+  cursor: pointer;
+  background: white;
+
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align children */
+  gap: 15px;
+  width: 100%; /* Take full width to center align children correctly */
+}
+
+.input-fieldd {
+  width: 100%; /* Make input take full width */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px ;
+  margin-top: 5px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.input-fieldd:focus {
+  outline: none;
+}
+
+.labal {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color:black;
+ margin-left: 185px;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}

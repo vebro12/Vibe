@@ -1,0 +1,67 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #e3e4e8; /* Lighter text color for dark theme */
+  --gray: rgba(255, 255, 255, 0.65); /* Lighter gray for dark theme */
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #555; /* Darker HR color */
+  --cardColor: rgba(40, 52, 62, 0.64); /* Darker card color */
+  --buttonBg: linear-gradient(106.23deg, #8364e8, #d397fa 100%);
+  --inputColor: rgba(255, 255, 255, 0.1); /* Light input background for contrast */
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --schedule: #E1AE4A;
+  --backgroundDark: #1a1a2e; /* Dark theme background */
+  --borderDark: #0f3460; /* Dark theme border color */
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+  background: var(--backgroundDark); /* Using the dark theme background */
+  padding: 1rem 1rem;
+}
+
+.blur2 {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #5b5b58; /* Consider adjusting if needed */
+  filter: blur(100px);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition: all 100ms ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #fff; /* Keep text readable on hover */
+  background: #8364e8; /* Dark theme hover background */
+  border: 1px solid #d397fa ;
+}
+
+.button:disabled {
+  background: #d397fa;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Additional adjustments for dark theme */
+body {
+  background-color: var(--backgroundDark); /* Ensure overall page background matches */
+  color: var(--black); /* Ensure text is readable */
+}
+
